@@ -1,20 +1,17 @@
-# DailyDictionaryDigest
+# Daily Dream Reminder
 
--   Send out an email with a digest of a random selection of words and their corresponding definitions.
+-   Send out a daily email with a digest of your current life's dream in Markdown.
 
 ### Intuition
 
--   A great exercise for perpetual mental acquity and a robust vocabularity
-
-### Notes
-
--   We build the list of words within python by directly constructing a dictionary from a json file. This is more
-    performant than loading a list of new-line-deliminated words.
+-   Being reminded of your 3 year dream is a fantastic tool for visualization.
 
 ### Usage
+
 
 -   In a crontab:
 
 ```{bash}
-SMTP_HOST=smtp.site.com SMTP_PASS=password EMAIL_FROM=from@test.com EMAIL_TO=to@test.com /thedir/send_digest.py 5
+THREE_YEAR_PAINTED_PICTURE=markdowntext SMTP_HOST=smtp.site.com SMTP_PASS=password EMAIL_FROM=from@test.com EMAIL_TO=to@test.com /thedir/send_email.py
+
 ```
